@@ -32,3 +32,5 @@
 
 ## Summary
 <p>Overall our machine learning was only able to achieve 73% accuracy in predicting if the applicants would be successful if funded. To further improve our accuracy we could make several adjustments. First, by updating the batch size to be smaller. By default batch size is 32. Reducing it would force our neural network to consider more of the data, instead of summarizing. Next, because our scaled data has some negative values, we may want to try using the TANH activation. Since RELU only outputs values from 0 and above, any negative outputs would be 0.</p>
+
+<p>Alternatively, I would recommend using a RandomForest classifier (decision tree) as the method for predicting funding outcomes with this data. RandomForest generally has high accuracy. It is also less likely to over-fit the data because not all trees will see all features. Lastly, it is easier to interpret the outcomes, as you can see the importance placed on each feature.</p>
